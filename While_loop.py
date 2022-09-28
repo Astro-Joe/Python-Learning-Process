@@ -1,39 +1,34 @@
+# Basic exampleof while loop
 # currentNumber = 1
-# while currentNumber <= 5:
+# while currentNumber < 5:
 #     print(currentNumber)
 #     currentNumber += 1
 
-
-#This program allows input and ends when the word quit is inpu
-# prompt = '\nTell me something, and I will repeat it back to you:'
-# prompt += '\n(Enter \'quit\' to end the program): '
-
-# message = ""
-# while message !='quit':
-#     message = input(prompt)
+# Using a value to quit a while loop
+# message = ''
+# while message != 'quit':
+#     message = input("\nTell me something and I'll repeat it back to you: \nEnter 'quit' to end the program ")
 #     if message != 'quit':
 #         print(message)
 
-# Using flags
+# Using a flag
+#A flag is used when there are a lot of conditions that can make the while loop stop.
+# promp = '\nTell me anything and I will give you back'
+# promp += '\nEnter \'quit\' to end the program: '
+# message = ''
+
 # active = True
 # while active:
-#     message = input(prompt)
+#     message = input(promp)
 #     if message == 'quit':
-#         active = False
-#     else:
-#         print(message)
-
-# while True:
-#     city = input(prompt)
-#     if city  == 'quit':
-#         break
-#     else:
-
-#         print("I'd love to go to " + city.title()+ '!')
-
-currentNumber = 0
-while currentNumber < 10:
-    currentNumber += 1
-    if currentNumber % 2 == 0:
+#         active =False
+        
+        
+#Using break
+#This is used to end the loop immediately a condition has been met
+while True:
+    city = input('\nEnter a name of a city. \nEnter "quit" when you are done')
+    if city ==  'quit':
         break
-    print(currentNumber)
+    else:
+        print('You have visited ' + city.title())
