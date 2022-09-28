@@ -57,3 +57,17 @@
 # boom = 1
 # while boom == 1:
 #     print('boom')
+
+
+person = {
+    'first_name': 'Debbie' ,
+     'last_name' : 'Oduga' ,
+     'age': 16 ,
+     'city': 'Ikorodu'
+}
+for key,value in person.items():
+    # print(key + ': ' + str(value) + '\n')
+    print(key.title())
+    print('\t' + str(value))
+# for i in person.keys():
+    # print(i)
