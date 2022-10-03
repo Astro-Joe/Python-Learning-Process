@@ -19,7 +19,9 @@ class User():
         self.login_attempts += 1
 
 
-    
+    def reset_login_attempts():
+        self.login_attempts = 0
+
 
 
 user = User('joseph', 'ilemobayo', 'ikorodu', 'astrojoe')
