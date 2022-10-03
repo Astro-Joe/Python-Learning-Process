@@ -17,8 +17,12 @@ class User():
         full_name = self.first_name + ' ' + self.last_name
         print("\nHello", full_name + '!.')
 
-    def increament_login_attempts(self):
-        self.login_attempts += 1
+    def increment_login_attempts(self):
+        self.login_attempts +=  1
+             
+            
+
+        
 
 
     def reset_login_attempts(self):
@@ -29,7 +33,7 @@ class User():
 user = User('joseph', 'ilemobayo', 'ikorodu', 'astrojoe', 1)
 user.describe_user()
 user.greet_user()
-user.increament_login_attempts()
+user.increment_login_attempts()
 print(user.login_attempts)
-user.reset_login_attempts()
-print(user.login_attempts)
+# user.reset_login_attempts()
+# print(user.login_attempts)
