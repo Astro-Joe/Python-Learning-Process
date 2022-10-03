@@ -21,7 +21,7 @@ class Restaurant():
         self.number_served = number   
 
 
-    def increament_number_served(self, number):
+    def increment_number_served(self, number):
         self.number_served += number
 
 
@@ -39,5 +39,5 @@ description = Restaurant("Mr biggs", "Fancy")
 description.set_number_served(11)
 description.number_peeps()
 
-description.increament_number_served(20)
+description.increment_number_served(20)
 description.number_peeps()
