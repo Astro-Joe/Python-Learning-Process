@@ -5,6 +5,8 @@ class User():
         self.location = location.title()
         self.usr_name = usr_name.title()
         self.login_attempts = login_attempts
+
+
     def describe_user(self):
         full_name = self.first_name + ' ' + self.last_name
         print("Your name is", full_name)
@@ -15,15 +17,19 @@ class User():
         full_name = self.first_name + ' ' + self.last_name
         print("\nHello", full_name + '!.')
 
-    def increament_login_attempts():
+    def increament_login_attempts(self):
         self.login_attempts += 1
 
 
-    def reset_login_attempts():
+    def reset_login_attempts(self):
         self.login_attempts = 0
 
 
 
-user = User('joseph', 'ilemobayo', 'ikorodu', 'astrojoe')
+user = User('joseph', 'ilemobayo', 'ikorodu', 'astrojoe', 1)
 user.describe_user()
 user.greet_user()
+user.increament_login_attempts()
+print(user.login_attempts)
+user.reset_login_attempts()
+print(user.login_attempts)
