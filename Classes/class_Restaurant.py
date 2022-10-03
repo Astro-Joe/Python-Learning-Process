@@ -14,11 +14,11 @@ class Restaurant():
         print(self.restaurant_name.title() + ' is open.' + '\n')
 
 
-    def  
+    def  number_peeps(self):
+         print(str(self.number_served) + " people have been served in " + self.restaurant_name)
     
     def set_number_served(self, number):
-        self.number_served = number
-        print(str(self.number_served) + " people have been served in " + self.restaurant_name)
+        self.number_served = number   
 
 
     def increament_number_served(self, number):
@@ -37,3 +37,4 @@ class Restaurant():
 description = Restaurant("Mr biggs", "Fancy")
 # description.number_served = 11
 description.set_number_served(11)
+description.number_peeps()
