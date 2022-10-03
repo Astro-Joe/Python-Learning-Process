@@ -1,10 +1,10 @@
 class User():
-    def __init__(self, first_name, last_name, location, usr_name):
+    def __init__(self, first_name, last_name, location, usr_name, login_attempts):
         self.first_name = first_name.title()
         self.last_name = last_name.title()
         self.location = location.title()
         self.usr_name = usr_name.title()
-
+        self.login_attempts = login_attempts
     def describe_user(self):
         full_name = self.first_name + ' ' + self.last_name
         print("Your name is", full_name)
@@ -14,6 +14,12 @@ class User():
     def greet_user(self):
         full_name = self.first_name + ' ' + self.last_name
         print("\nHello", full_name + '!.')
+
+    def increament_login_attempts():
+        self.login_attempts += 1
+
+
+    
 
 
 user = User('joseph', 'ilemobayo', 'ikorodu', 'astrojoe')
