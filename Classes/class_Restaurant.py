@@ -38,3 +38,6 @@ description = Restaurant("Mr biggs", "Fancy")
 # description.number_served = 11
 description.set_number_served(11)
 description.number_peeps()
+
+description.increament_number_served(20)
+description.number_peeps()
