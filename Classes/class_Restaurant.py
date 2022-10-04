@@ -26,16 +26,26 @@ class Restaurant():
 
 
 class IceCreamStand(Restaurant):
-    def __init__(self, *flavours):
-        super.__init__(restaurant_name, cuisine_type):
-        self.flavours = flavours
+    def __init__(self, *flavour):
+        self.flavour = list(flavour)
+        # super().__init__(restaurant_name, cuisine_type)
+        
 
 
     def display_flavour(self):
-        flavours = list(flavours)
         print("These are the requested flavours!")
-        for flavour in flavours:
-            print('\t-' + flavour)
+        for flavor in self.flavour:
+            print('\t-' + flavor)
+        #print(self.flavour)
+
+
+description = IceCreamStand('vanilla', 'chocolate', 'banana')
+description.display_flavour()
+
+
+
+
+
 
 
 
@@ -48,10 +58,11 @@ class IceCreamStand(Restaurant):
 # restaurant_.describe_restaurant()
 # restaurant__.describe_restaurant()
 # restaurant.open_restaurant()
-description = Restaurant("Mr biggs", "Fancy")
-# description.number_served = 11
-description.set_number_served(11)
-description.number_peeps()
 
-description.increment_number_served(20)
-description.number_peeps()
+# # description.number_served = 11
+# description.set_number_served(11)
+# description.number_peeps()
+
+# description.increment_number_served(20)
+# description.number_peeps()
+
