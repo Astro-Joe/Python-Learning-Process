@@ -25,6 +25,20 @@ class Restaurant():
         self.number_served += number
 
 
+class IceCreamStand(Restaurant):
+    def __init__(self, *flavours):
+        super.__init__(restaurant_name, cuisine_type):
+        self.flavours = flavours
+
+
+    def display_flavour(self):
+        flavours = list(flavours)
+        print("These are the requested flavours!")
+        for flavour in flavours:
+            print('\t-' + flavour)
+
+
+
 # restaurant = Restaurant('delightsome chicken', 'average')
 # restaurant_ = Restaurant('mr biggs', 'fancy')
 # restaurant__ = Restaurant("domino's", 'middle class')
