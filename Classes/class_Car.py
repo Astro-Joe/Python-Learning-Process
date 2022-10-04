@@ -82,12 +82,12 @@ class ElectricCar(Car):
 
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
-print(my_tesla.get_descriptive_name())
+# print(my_tesla.get_descriptive_name())
 #my_tesla.describe_battery()
 my_tesla.fill_gas_tank()
 #my_tesla.battery.battery_size=85  # Changes the value of attribute battery_size
-my_tesla.battery.describe_battery()
-my_tesla.battery.get_range()
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
 
 #my_used_car = Car('audi', 'a4', 2016)
 # print(my_used_car.get_descriptive_name())
