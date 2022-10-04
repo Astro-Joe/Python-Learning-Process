@@ -17,13 +17,17 @@ class Car():
 
     
     def read_odometer(self):
-        """Print a statement showing the car's mileage."""
+        """Print a statement showing the car's mileage.
+        Reject the change if it's attempt to roll the odometer back"""
         print("This car has " + str(self.odometer_reading) + " miles on it.")
 
 
     def update_odometer(self, mileage):
         """Set the odometer reading to a certain value"""
-        self.odometer_reading = mileage
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer")
     
 
     def increment_odometer(self, mileage):
@@ -47,12 +51,24 @@ class Battery():
         print("This car has a " + str(self.battery_size) + "-KWh battery.")
 
 
+    def get_range(self):
+        """Print a statement about the range this battery provides."""
+        if self.battery_size == 70:
+            range = 240
+        elif self.battery_size == 85:
+            range = 270
+
+        message = "This car can go approximately " + str(range)
+        message += " miles on a full charge."
+        print(message)
+
+
 class ElectricCar(Car):
     """Represents aspects of a car, specific to electric vehicles"""
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year)
-        self.battery_size = Battery()
+        self.battery = Battery()
 
 
     # def describe_battery(self):
@@ -70,7 +86,7 @@ print(my_tesla.get_descriptive_name())
 #my_tesla.describe_battery()
 my_tesla.fill_gas_tank()
 my_tesla.battery.describe_battery()
-
+my_tesla.battery.get_range()
 
 #my_used_car = Car('audi', 'a4', 2016)
 # print(my_used_car.get_descriptive_name())
