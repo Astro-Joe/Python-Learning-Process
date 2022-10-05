@@ -35,7 +35,7 @@ class IceCreamStand(Restaurant):
     def display_flavour(self):
         print("These are the requested flavours!")
         for flavor in self.flavour:
-            print('\t-' + flavor)
+            print('\t-' + flavor.title())
         #print(self.flavour)
 
 
