@@ -63,6 +63,10 @@ class Battery():
         print(message)
 
 
+    def upgrade_battery(self):
+        self.battery_size = 85
+        print("The battery has been upgraded to " + str(self.battery_size) + '-KWh battery.')
+
 class ElectricCar(Car):
     """Represents aspects of a car, specific to electric vehicles"""
     def __init__(self, make, model, year):
@@ -81,14 +85,23 @@ class ElectricCar(Car):
         print("This car deosn't need a gas tank")
 
 
+    
+
+
+
+
 my_tesla = ElectricCar('tesla', 'model s', 2016)
+my_tesla.battery.describe_battery()
+
 # print(my_tesla.get_descriptive_name())
 #my_tesla.describe_battery()
-my_tesla.fill_gas_tank()
+# my_tesla.fill_gas_tank()
 #my_tesla.battery.battery_size=85  # Changes the value of attribute battery_size
 # my_tesla.battery.describe_battery()
-# my_tesla.battery.get_range()
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
 
+my_tesla.battery.get_range()
 #my_used_car = Car('audi', 'a4', 2016)
 # print(my_used_car.get_descriptive_name())
 
