@@ -1,5 +1,4 @@
 # Creating a class named Restaurant
-
 class Restaurant():
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
@@ -26,9 +25,11 @@ class Restaurant():
 
 
 class IceCreamStand(Restaurant):
+    """Represents attributes related to ice-cream stands"""
     def __init__(self, *flavour):
         self.flavour = list(flavour)
-        # super().__init__(restaurant_name, cuisine_type)
+        """Initializing attribute of parent class"""
+        super().__init__('restaurant_name', 'cuisine_type')
         
 
 
