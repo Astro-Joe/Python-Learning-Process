@@ -19,7 +19,7 @@ class Car():
     def read_odometer(self):
         """Print a statement showing the car's mileage.
         Reject the change if it's attempt to roll the odometer back"""
-        print("This car has " + str(self.odometer_reading) + " miles on it.")
+        print("\nThis car has " + str(self.odometer_reading) + " miles on it.")
 
 
     def update_odometer(self, mileage):
@@ -27,7 +27,7 @@ class Car():
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
-            print("You can't roll back an odometer")
+            print("\nYou can't roll back an odometer")
     
 
     def increment_odometer(self, mileage):
@@ -36,7 +36,7 @@ class Car():
 
     
     def fill_gas_tank(self):
-        print("Your gas tank is ", str(self.gas_tank) + " litres." )
+        print("\nYour gas tank is ", str(self.gas_tank) + " litres." )
 
 
 class Battery():
@@ -48,7 +48,7 @@ class Battery():
 
 
     def describe_battery(self):
-        print("This car has a " + str(self.battery_size) + "-KWh battery.")
+        print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
 
 
     def get_range(self):
@@ -58,14 +58,14 @@ class Battery():
         elif self.battery_size == 85:
             range = 270
 
-        message = "This car can go approximately " + str(range)
+        message = "\nThis car can go approximately " + str(range)
         message += " miles on a full charge."
         print(message)
 
 
     def upgrade_battery(self):
         self.battery_size = 85
-        print("The battery has been upgraded to " + str(self.battery_size) + '-KWh battery.')
+        print("\nThe battery has been upgraded to " + str(self.battery_size) + '-KWh battery.')
 
 class ElectricCar(Car):
     """Represents aspects of a car, specific to electric vehicles"""
@@ -75,40 +75,11 @@ class ElectricCar(Car):
         self.battery = Battery()
 
 
-    # def describe_battery(self):
-    #     """Print a statement describing the battery size"""
-    #     print("This car has a " + str(self.battery_size) + "-KWh battery.")
+    def describe_battery(self):
+        """Print a statement describing the battery size"""
+        print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
 
 
     def fill_gas_tank(self):
         """Electric cars don't have gas tank."""
-        print("This car deosn't need a gas tank")
-
-
-    
-
-
-
-
-# my_tesla = ElectricCar('tesla', 'model s', 2016)
-# my_tesla.battery.describe_battery()
-
-# print(my_tesla.get_descriptive_name())
-#my_tesla.describe_battery()
-# my_tesla.fill_gas_tank()
-#my_tesla.battery.battery_size=85  # Changes the value of attribute battery_size
-# my_tesla.battery.describe_battery()
-# my_tesla.battery.get_range()
-# my_tesla.battery.upgrade_battery()
-
-# my_tesla.battery.get_range()
-#my_used_car = Car('audi', 'a4', 2016)
-# print(my_used_car.get_descriptive_name())
-
-# my_used_car.update_odometer(50)
-# my_used_car.read_odometer()
-
-# my_used_car.increment_odometer(30)
-# my_used_car.read_odometer()
-#my_used_car.fill_gas_tank()
-
+        print("\nThis car deosn't need a gas tank")
