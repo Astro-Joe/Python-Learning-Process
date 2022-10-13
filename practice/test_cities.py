@@ -9,4 +9,9 @@ class CityTestCase(unittest.TestCase):
         description = city_country('ikorodu', 'lagos')
         self.assertEqual(description, 'Ikorodu, Lagos')
 
+    def test_city_country_population(self):
+        description = city_country('ikorodu', 'lagos', 500000)
+        self.assertEqual(description, 'Ikorodu, Lagos- Population 500000')
+
+
 unittest.main()
