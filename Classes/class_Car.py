@@ -27,8 +27,8 @@ class Car():
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
-            print("\nYou can't roll back an odometer")
-    
+            output = "\nYou can't roll back an odometer"
+            return output
 
     def increment_odometer(self, mileage):
         """Add the given amount to the odometer reading"""
@@ -36,8 +36,8 @@ class Car():
 
     
     def fill_gas_tank(self):
-        print("\nYour gas tank is ", str(self.gas_tank) + " litres." )
-
+        output = "\nYour gas tank is " +  str(self.gas_tank) + " litres."
+        return output
 
 class Battery():
     """A simple attempt to model the battery of a car"""
@@ -48,8 +48,8 @@ class Battery():
 
 
     def describe_battery(self):
-        print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
-
+        output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
+        return output
 
     def get_range(self):
         """Print a statement about the range this battery provides."""
@@ -60,12 +60,12 @@ class Battery():
 
         message = "\nThis car can go approximately " + str(range)
         message += " miles on a full charge."
-        print(message)
+        return message
 
 
     def upgrade_battery(self):
         self.battery_size = 85
-        print("\nThe battery has been upgraded to " + str(self.battery_size) + '-KWh battery.')
+        output = "\nThe battery has been upgraded to " + str(self.battery_size) + '-KWh battery.'
 
 class ElectricCar(Car):
     """Represents aspects of a car, specific to electric vehicles"""
@@ -77,9 +77,10 @@ class ElectricCar(Car):
 
     def describe_battery(self):
         """Print a statement describing the battery size"""
-        print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
-
+        output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
+        return output 
 
     def fill_gas_tank(self):
         """Electric cars don't have gas tank."""
-        print("\nThis car deosn't need a gas tank")
+        output = "\nThis car deosn't need a gas tank"
+        return output
