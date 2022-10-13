@@ -10,4 +10,11 @@ class TestClassCar(unittest.TestCase):
         result =  name.get_descriptive_name()
         self.assertEqual(result, '2016 Honda Sport')
 
+    def test_read_odometer(self):
+        """Test case for the method read_odometer under class Car"""
+        name = Car('benz', 'luxury', 2022)
+        name.odometer_reading = 32
+        result = name.read_odometer()
+        self.assertEqual(result, '\nThis car has 32 miles on it.')
+
 unittest.main()
