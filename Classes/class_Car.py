@@ -27,8 +27,7 @@ class Car():
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
-            output = "\nYou can't roll back an odometer"
-            return output
+            print("\nYou can't roll back an odometer")
 
     def increment_odometer(self, mileage):
         """Add the given amount to the odometer reading"""
@@ -48,8 +47,8 @@ class Battery():
 
 
     def describe_battery(self):
-        output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
-        return output
+        print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
+        
 
     def get_range(self):
         """Print a statement about the range this battery provides."""
@@ -60,7 +59,7 @@ class Battery():
 
         message = "\nThis car can go approximately " + str(range)
         message += " miles on a full charge."
-        return message
+        print(message)
 
 
     def upgrade_battery(self):
@@ -78,7 +77,7 @@ class ElectricCar(Car):
     def describe_battery(self):
         """Print a statement describing the battery size"""
         output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
-        return output 
+         
 
     def fill_gas_tank(self):
         """Electric cars don't have gas tank."""
