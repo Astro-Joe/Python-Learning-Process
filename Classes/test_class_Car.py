@@ -31,6 +31,12 @@ class TestClassCar(unittest.TestCase):
         result = name.read_odometer()
         self.assertEqual(result, '\nThis car has 20 miles on it.')
 
+    def test_fill_gas_tank(self):
+       """Test case for the method fill_gas_tank under class Car""" 
+       name = Car('benz', 'luxury', 2022)
+       name.gas_tank = 15
+       result = name.fill_gas_tank()
+       self.assertEqual(result, "\nYour gas tank is 15 litres.")
 
-
+    
 unittest.main()
