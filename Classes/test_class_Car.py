@@ -38,5 +38,12 @@ class TestClassCar(unittest.TestCase):
        result = name.fill_gas_tank()
        self.assertEqual(result, "\nYour gas tank is 15 litres.")
 
-    
+    def test_update_odometer_2(self):
+        """Test case to show  that the odometer can't be rolled back"""
+        name = Car('benz', 'luxury', 2022)
+        name.odometer_reading = 21
+        result = name.update_odometer(20)
+        self.assertEqual = (result, "\nYou can't roll back an odometer")
+
+
 unittest.main()
