@@ -3,12 +3,12 @@
 
 def get_formatted_name(first_name, last_name):
     """ Returns a full name, neatly formatted.
-    Contains two parameters to get a full name and return the output of the function."""
+    Contains two parameters to get a full name and return the output of the function to the caller(assigned variable)."""
     
     full_name = first_name + ' ' + last_name
     return full_name.title()
 
 sample_1 = get_formatted_name('joseph', 'ilemobayo')
-print(sample_1)
+print('The name of the guy who wrote this code is ' + sample_1)
     
     
