@@ -6,7 +6,7 @@ def get_formatted_name(first_name, last_name, middle_name= ''): # Here making th
     """ Returns a full name, neatly formatted.
     Contains two parameters to get a full name and return the output of the function to the caller(assigned variable)."""
     
-    if middle_name:
+    if middle_name: # Python interpretes non-empty strings as True.
         full_name = first_name + ' ' + middle_name + ' ' + last_name
     else:
         full_name = first_name + ' ' + last_name
