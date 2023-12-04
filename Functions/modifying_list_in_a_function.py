@@ -3,7 +3,7 @@
 # This will contain two functions.
 # The first will show that the 3D designs are being printed.
 
-def printin_design(uncompleted_design, completed_design):
+def design_printer(uncompleted_design, completed_design):
     """A function that shows that 3D designs are being printed."""
     
     while uncompleted_design:
@@ -11,6 +11,8 @@ def printin_design(uncompleted_design, completed_design):
         
         print(current_design.title() + ' is printing')
         completed_design.append(current_design)
-        
+    
+    
 
+# The second function will show the 
             
