@@ -1,3 +1,5 @@
+# A function can also work with lists
+
 def greet_users(names):
     """Prints a simple greeting to each user in the list."""
     
