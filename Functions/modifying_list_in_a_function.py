@@ -13,8 +13,11 @@ def design_printer(uncompleted_design, completed_design):
         completed_design.append(current_design)
     
     for design in completed_design:
-        msg = design + ' has been printed'
+        msg = design.tile() + ' has been printed'
         print(msg)
 
 
+dsgn = ['iphone case', 'NLE pendant', '4PF pendant', 'dodecahedron']
+printed_dsgn = []
+design_printer(dsgn, printed_dsgn)
             
