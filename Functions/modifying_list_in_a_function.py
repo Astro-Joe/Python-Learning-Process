@@ -4,7 +4,7 @@
 # The first will show that the 3D designs are being printed.
 
 def design_printer(uncompleted_design, completed_design):
-    """A function that shows that 3D designs are being printed."""
+    """Shows the process of printing a 3D design."""
     
     while uncompleted_design:
         current_design = uncompleted_design.pop()
