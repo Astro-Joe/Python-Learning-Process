@@ -9,11 +9,12 @@ def design_printer(uncompleted_design, completed_design):
     while uncompleted_design:
         current_design = uncompleted_design.pop()
         
-        print(current_design.title() + ' is printing')
+        print('-' + current_design.upper() + ' is printing')
         completed_design.append(current_design)
     
+    print('\n')
     for design in completed_design:
-        msg = design.tile() + ' has been printed'
+        msg = '-'  + design.upper() + ' has been printed'
         print(msg)
 
 
