@@ -12,7 +12,9 @@ def design_printer(uncompleted_design, completed_design):
         print(current_design.title() + ' is printing')
         completed_design.append(current_design)
     
-    
+    for design in completed_design:
+        msg = design + ' has been printed'
+        print(msg)
 
-# The second function will show the 
+
             
