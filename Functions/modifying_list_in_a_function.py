@@ -15,10 +15,10 @@ def design_printer(uncompleted_design, completed_design):
         print(msg)
 
 
-dsgn = ['iphone case', 'NLE pendant', '4PF pendant', 'dodecahedron']
-printed_dsgn = []
+# dsgn = ['iphone case', 'NLE pendant', '4PF pendant', 'dodecahedron']
+# printed_dsgn = []
 
 # design_printer(dsgn[:], printed_dsgn) # Allows the function to work on the liust without affecting the original list
-design_printer(dsgn, printed_dsgn)
+# design_printer(dsgn, printed_dsgn)
 # print(dsgn)
             
