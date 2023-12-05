@@ -1,23 +1,37 @@
-account = []
-for users in range(2): # You can adjust the value of range to accept any number of user.
-    new_user = {
-       'user_' + str(users):{
-            'username': input('Enter a username: '),
-            'first': input('Enter your fist name: '),
-            'last': input("Enter you last name: "),
-            'location': input('Enter your location: '),
-            'password': input('Enter a password: ')
-        }
-    }
-    print('\n')
-    account.append(new_user)
-# print(len(account))
-# print(account[0])
-pass_word = input('Enter your password: ')
-for user in account:
-    for key, value in user.items():
-        for word, meaning in value.items():
-            print(value['password'])
+# A script to accept users info and store it in a list.
+
+def user_info(first, last, username, password ):
+    """This function asks for info from the user for storage"""
+    account = []
+    flag = True
+    while flag:
+        
+        
+
+
+
+
+
+# account = []
+# for users in range(2): # You can adjust the value of range to accept any number of user.
+#     new_user = {
+#        'user_' + str(users):{
+#             'username': input('Enter a username: '),
+#             'first': input('Enter your fist name: '),
+#             'last': input("Enter you last name: "),
+#             'location': input('Enter your location: '),
+#             'password': input('Enter a password: ')
+#         }
+#     }
+#     print('\n')
+#     account.append(new_user)
+# # print(len(account))
+# # print(account[0])
+# pass_word = input('Enter your password: ')
+# for user in account:
+#     for key, value in user.items():
+#         for word, meaning in value.items():
+#             print(value['password'])
             # if pass_word == meaning:
             #     print('Welcome ')
 
