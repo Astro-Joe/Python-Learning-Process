@@ -1,8 +1,18 @@
 current_users = ['Joseph', 'John','Samuel', 'Tayo', 'Dayo'] 
-new_users = ['JOSEPH', 'Haridun', 'samuel']
 
-for user in current_users:
-    if user.upper() or user.title() in new_users:
-        print('This username is unavailable.\nEnter a new username.\n')
+flag = True
+
+while flag:
+    usr_name = input("Enter a username: ")
+    
+    if usr_name.title() not in current_users:
+        print('Username available!')
+        current_users.append(usr_name.title())
+        flag = False
+        
     else:
-        print('Username available.\n')
+        print('Username UNAVAILABLE!\n')
+ 
+
+print(current_users)
+
