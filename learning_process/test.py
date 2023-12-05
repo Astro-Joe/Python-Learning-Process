@@ -72,3 +72,7 @@
 # # for i in person.keys():
 #     # print(i)
 
+
+
+name = 'josePh'
+print(name.title())
