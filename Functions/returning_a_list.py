@@ -7,5 +7,5 @@ def greet_users(names):
         message = 'Hello, ' + name.title() + '!'
         print(message)
         
-usernames = ['joseph', 'tolulope', 'damilare', 'ifeoluwa']
-greet_users(usernames)
+# usernames = ['joseph', 'tolulope', 'damilare', 'ifeoluwa']
+# greet_users(usernames)
