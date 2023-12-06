@@ -19,10 +19,14 @@ class Dog(object): # Format for python 2.7
         
         
 my_dog = Dog('willie', 6) # Creating an instance with having the attributes of the class_Dog
-
+your_dog = Dog('lucy', 3)
 # Calling methods
 my_dog.sit()
 my_dog.roll_over()
+
+print('\n')
+print("My dog's name is " + your_dog.name.title())
+your_dog.roll_over()
 
 # print("My dog's name is "  + my_dog.name.title() + ".")
 # print("My dog is " + str(my_dog.age) + " years old.")
