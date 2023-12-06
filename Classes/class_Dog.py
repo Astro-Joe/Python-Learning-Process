@@ -10,3 +10,7 @@ class Dog():
         """Simulates a dog sitting down in response to a command."""
         print(self.name.title() + ' is now sitting.')
         
+    def roll_over(self):
+        """Simulates rolling over in response to a command."""
+        print(self.name.title() + ' rolled over!')
+        
