@@ -1,4 +1,4 @@
-class Dog():
+class Dog(object): # Format for python 2.7
     """A simple attempt to model a dog."""
     
     # Initializing the attributes of the Class.
@@ -17,3 +17,8 @@ class Dog():
         """Simulates rolling over in response to a command."""
         print(self.name.title() + ' rolled over!')
         
+        
+my_dog = Dog('willie', 6)
+
+print("My dog's name is "  + my_dog.name.title() + ".")
+print("My dog is " + str(my_dog.age) + " years old.")
