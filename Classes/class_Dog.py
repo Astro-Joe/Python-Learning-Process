@@ -1,11 +1,14 @@
 class Dog():
     """A simple attempt to model a dog."""
     
-    def __init__(self, name, age):
+    # Initializing the attributes of the Class.
+    # The 'self' parameter is compulsory when initializing attributes of a class.
+    def __init__(self, name, age): #The parameters are called attributes of the class.
         """Initialize name and age attributes."""
-        self.name = name
+        self.name = name # Makes the variable accessible to evry method in the class an instances created from the class.
         self.age = age
-        
+    
+    # A function that is part of a class is called a method.  
     def sit(self):
         """Simulates a dog sitting down in response to a command."""
         print(self.name.title() + ' is now sitting.')
