@@ -18,7 +18,10 @@ class Dog(object): # Format for python 2.7
         print(self.name.title() + ' rolled over!')
         
         
-my_dog = Dog('willie', 6)
+my_dog = Dog('willie', 6) # Creating an instance with having the attributes of the class_Dog
 
 print("My dog's name is "  + my_dog.name.title() + ".")
 print("My dog is " + str(my_dog.age) + " years old.")
+
+#print(my_dog.name) # Prints the argument assigned to the attribute 'name' in the instance created.
+#print(my_dog.age) # Prints the argument assigned to the attribute 'age' in the instance created.
