@@ -19,8 +19,13 @@ class Car():
     def read_odometer(self):
         """Print a statement showing the car's mileage.
         Reject the change if it's attempt to roll the odometer back"""
-        output = "\nThis car has " + str(self.odometer_reading) + " miles on it."
-        return output
+        if self.odometer_reading >= 0:
+            output = "\nThis car has " + str(self.odometer_reading) + " miles on it."
+            return output
+        else:
+            warning = "\nYou can't roll back the odometer!"
+            return warning
+        
 
     def update_odometer(self, mileage):
         """Set the odometer reading to a certain value"""
