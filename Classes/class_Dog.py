@@ -6,3 +6,7 @@ class Dog():
         self.name = name
         self.age = age
         
+    def sit(self):
+        """Simulates a dog sitting down in response to a command."""
+        print(self.name.title() + ' is now sitting.')
+        
