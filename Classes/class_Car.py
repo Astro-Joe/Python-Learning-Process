@@ -1,4 +1,5 @@
 class Car():
+# class Car(object): # Python 2.7 format
     """A simple attempt to represent a car."""
 
     def __init__(self, make, model, year):
@@ -75,6 +76,7 @@ class ElectricCar(Car):
     """Represents aspects of a car, specific to electric vehicles"""
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
+        # super(ElectricCar,self).__init__(make,model,year) # Python 2.7 format
         super().__init__(make, model, year)
         self.battery = Battery()
 
