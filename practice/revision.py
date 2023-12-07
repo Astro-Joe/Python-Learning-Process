@@ -6,5 +6,23 @@
 #     print("Hello " + first_name.title() + " " + lastname.title() + "!")
 
 # greet_user(first_name='joseph')
-name = [{'first':'Joseph' }]
-print(name)
+# name = [{'first':'Joseph' }]
+# print(name)
+
+
+
+
+
+
+flag = True
+me = []
+num = 0
+while flag:
+    
+    num = num + 1
+    
+    # flag = False
+    me.append(num)
+    
+    print(me)
+    # print(me[-1])
