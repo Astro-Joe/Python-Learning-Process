@@ -1,10 +1,12 @@
 # A script to accept users info and store it in a list.
 
-def user_info(first, last, username, password ):
-    """This function asks for info from the user for storage"""
-    account = []
-    flag = True
-    while flag:
+account = []
+info = {}
+flag = True
+while flag:
+    info['first_name'] = input('Enter your name: ')
+    
+        
         
         
 
