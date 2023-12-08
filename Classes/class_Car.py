@@ -81,12 +81,12 @@ class ElectricCar(Car):
         self.battery = Battery()
 
 
-    def describe_battery(self):
-        """Print a statement describing the battery size"""
-        output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
+    # def describe_battery(self):
+    #     """Print a statement describing the battery size"""
+    #     output = "\nThis car has a " + str(self.battery_size) + "-KWh battery."
          
 
-    def fill_gas_tank(self):
+    def fill_gas_tank(self): # Overriding a method from the parent class
         """Electric cars don't have gas tank."""
         output = "\nThis car deosn't need a gas tank"
         return output
