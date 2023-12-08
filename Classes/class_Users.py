@@ -36,21 +36,21 @@ class Admin(User):
         """Initializing attributes of Admin"""
         super().__init__(first_name, last_name, location, usr_name)
         """Initializing attributes of superclass"""
-        self.priviledges = ['can add post', 'can delete post', 'can ban user']
+        self.privileges = ['can add post', 'can delete post', 'can ban user']
         
     
     def show_priviledges(self):
         """Shows the priviledges of said admin"""
-        # print(self.first_name + ' has the following priviledges')     
-        for priviledge in self.priviledges:
-            print('\t-' + priviledge.title())
+        # print(self.first_name + ' has the following privileges')     
+        for privilege in self.privileges:
+            print('\t-' + privilege.title())
                    
 
     
 
 user = Admin('joseph', 'ilemoabyo', 'lagos', 'the_boss')
 print(user.describe_user())
-print(user.first_name + ' has the following priviledges')  
+print(user.first_name + ' has the following privileges')  
 user.show_priviledges()
 
 
