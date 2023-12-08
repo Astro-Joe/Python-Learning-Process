@@ -40,14 +40,16 @@ class Admin(User):
     
     def show_priviledges(self):
         """Shows the priviledges of said admin"""
-        print(self.first_name + ' has the following priviledges')     
+        # print(self.first_name + ' has the following priviledges')     
         for priviledge in self.priviledges:
             print('\t-' + priviledge)
                    
 
     
 
-user = Admin()
+user = Admin('joseph', 'ilemoabyo', 'lagos', 'the_boss')
+print(user.describe_user())
+print()
 
 
 
