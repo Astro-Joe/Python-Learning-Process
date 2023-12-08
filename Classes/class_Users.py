@@ -37,8 +37,12 @@ class Admin(User):
         self.priviledges = ['can add post', 'can delete post', 'can ban user']
     
     
-    
-    
+    def show_priviledges(self):
+        """Shows the priviledges of said admin"""
+        print(self.first_name + ' has the following priviledges')     
+        for priviledge in self.priviledges:
+            print('\t-' + priviledge)
+                   
 
     
 
