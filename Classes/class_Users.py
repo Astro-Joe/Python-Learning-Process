@@ -45,7 +45,10 @@ class Admin(User):
         for privilege in self.privileges:
             print('\t-' + privilege.title())
                    
-
+class Privileges():
+    """Handles privileges of the users."""
+    def __init__(self):
+        pass
     
 
 user = Admin('joseph', 'ilemoabyo', 'lagos', 'the_boss')
