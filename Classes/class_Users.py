@@ -29,7 +29,13 @@ class User():
         self.login_attempts[0] = 0
 
 
-
+class Admin(User):
+    """Initializing attributes of Admin"""
+    def __init__(self, first_name, last_name, location, usr_name):
+        """Initializing attributes of superclass"""
+        super().__init__(first_name, last_name, location, usr_name)
+        self.priviledges = ['can add post', 'can delete post', 'can ban user']
+    
     
     
     
