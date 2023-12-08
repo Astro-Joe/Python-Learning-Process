@@ -9,9 +9,9 @@ class User():
 
     def describe_user(self):
         full_name = self.first_name + ' ' + self.last_name
-        print("Your name is", full_name)
-        print("Your username is " + self.usr_name)
-        print("You are at", self.location)
+        print("Full name:", full_name)
+        print("Username:", self.usr_name)
+        print("Location:", self.location)
 
     def greet_user(self):
         full_name = self.first_name + ' ' + self.last_name
@@ -27,6 +27,7 @@ class User():
         
     def reset_login_attempts(self, attempt):
         self.login_attempts[0] = 0
+        pass
 
 
 class Admin(User):
@@ -42,14 +43,16 @@ class Admin(User):
         """Shows the priviledges of said admin"""
         # print(self.first_name + ' has the following priviledges')     
         for priviledge in self.priviledges:
-            print('\t-' + priviledge)
+            print('\t-' + priviledge.title())
                    
 
     
 
 user = Admin('joseph', 'ilemoabyo', 'lagos', 'the_boss')
 print(user.describe_user())
-print()
+print(user.first_name + ' has the following priviledges')  
+user.show_priviledges()
+
 
 
 
