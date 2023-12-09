@@ -53,6 +53,7 @@ class Battery():
 
 
     def describe_battery(self):
+        """Print the capacity of the battery"""
         print("\nThis car has a " + str(self.battery_size) + "-KWh battery.")
         
 
@@ -69,6 +70,7 @@ class Battery():
 
 
     def upgrade_battery(self):
+        """Upgrades the battery to a higher capacity"""
         self.battery_size = 85
         output = "\nThe battery has been upgraded to " + str(self.battery_size) + '-KWh battery.'
 
