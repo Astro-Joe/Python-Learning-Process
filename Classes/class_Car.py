@@ -1,3 +1,5 @@
+"""A class that can be used to represent a car"""
+
 class Car():
 # class Car(object): # Python 2.7 format
     """A simple attempt to represent a car."""
